@@ -1,0 +1,37 @@
+/* .card {
+	margin-top: 10px;
+} */
+
+/* #buttonSearch {
+	align-content: right;
+  background-color: aqua;
+  position: relative;
+} */
+
+#mainBox.container{
+  background-color:yellow;
+  /* margin-left: 0; */
+  /* margin: 1px; */
+}
+
+.input-group{
+position: relative;
+}
+.checkDatosMostrar{
+  position: absolute;
+  right: 0;
+}
+
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
+@media (min-width: 1025px) {
+  .h-custom-2 {
+    height: 100%;
+  }
+}

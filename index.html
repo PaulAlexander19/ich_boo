@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light ">
+    <div class="container-fluid">
+      <div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a style="margin-left: 30px;" href="#">
+          <img src="img/Logo.png" class="img-fluid" alt="..." style=" height: 2.5rem;">
+
+        </a>
+      </div>
+      <div>
+
+        <a class="navbar-brand " href="#">UNIVERSIDAD NACIONAL SAN AGUSTIN DE AREQUIPA</a>
+      </div>
+      <div>
+
+        <a class="navbar-brand" href="#">Cerrar Sesion</a>
+        <!-- <span class="icondoor-open-fill"></span> --> agregar icono
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><u><b>Menu</b></u></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">ASIGNATURA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">TAREAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">CONFIGURACIÓN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">SALIR</a>
+            </li>
+            <hr>
+            <h5><b>Notas Personales</b></h5>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11"></textarea>
+
+            <p></p>
+
+            <div class="d-grid gap-2 ">
+              <button class="btn btn-primary" type="button">Guardar</button>
+              <button class="btn btn-secondary" type="button">Eliminar</button>
+            </div>
+
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr>
+
+  <div class="example-container">
+    <div class="row">
+      <div class="col-sm-8" style="border-right: 1px solid black;">
+
+        <!-- Tareas frecuentes -->
+        <h5 class="card-title text-center"><u><b>CURSOS FRECUENTES</b></u></h5>
+        <div class="container">
+          <div class="row row-cols-4">
+            <div class="col">
+
+              <a href="#" style="text-decoration: none; color: black;">
+                <div class="card">
+                  <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg"
+                    class="card-img-top" alt="Programación 01">
+                  <div class="card-body">
+                    <h5 class="card-title"><b>Courso:</b>-nombre-</h5>
+                    <p class="card-text"><b>Descripción:</b>brebe descripcion</p>
+
+                    <a href="#" class="btn btn-primary mt-3">Ir al curso</a>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col">
+              <a href="#" style="text-decoration: none; color: black;">
+                <div class="card">
+                  <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg"
+                    class="card-img-top" alt="Programación 01">
+                  <div class="card-body">
+                    <h5 class="card-title"><b>Courso:</b>-nombre-</h5>
+                    <p class="card-text"><b>Descripción:</b>brebe descripcion</p>
+
+                    <a href="#" class="btn btn-primary mt-3">Ir al curso</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" style="text-decoration: none; color: black;">
+                <div class="card">
+                  <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg"
+                    class="card-img-top" alt="Programación 01">
+                  <div class="card-body">
+                    <h5 class="card-title"><b>Courso:</b>-nombre-</h5>
+                    <p class="card-text"><b>Descripción:</b>brebe descripcion</p>
+
+                    <a href="#" class="btn btn-primary mt-3">Ir al curso</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" style="text-decoration: none; color: black;">
+                <div class="card">
+                  <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg"
+                    class="card-img-top" alt="Programación 01">
+                  <div class="card-body">
+                    <h5 class="card-title"><b>Courso:</b>-nombre-</h5>
+                    <p class="card-text"><b>Descripción:</b>brebe descripcion</p>
+
+                    <a href="#" class="btn btn-primary mt-3">Ir al curso</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- fin tareas frecuentes -->
+        <!-- Todos los cursos y buscar -->
+
+        <div class="container">
+          <button type="button" class="btn btn-secondary btn-sm">Ver Todos</button>
+
+          <div style="display: inline-block;">
+            <form>
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <button class="btn btn-outline-success ml-5" type="submit" id="buttonSearch">Search</button>
+          </div>
+        </div>
+
+        <!-- fin Todos los cursos y buscar -->
+
+        <hr>
+        <!-- Calendario y actividades -->
+        <h5 class="card-header text-center"><u><b>Actividades y Calendario</b></u></h5>
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col">
+
+              <!-- https://github.com/sergKenne/calendar-html-css-js/blob/master/calc.html -->
+              <img src="img/Calendar.png" class="card-img" alt="Calendario">
+
+
+            </div>
+            <div class="col">
+              <!-- Actividades -->
+              <div class="card">
+                <h5 class="card-header text-center"><u><b>Actividades</b></u></h5>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="card-body">
+                      <h6 class="card-title">Titulo de la actividad</h6>
+                      <p class="card-text mb-2">
+                        <b>Curso:</b> <i>Curso 02</i>
+                      </p>
+                      <p class="card-text mb-2">
+                        <b>Fecha:</b> 2021-10-1 (Viernes)
+                      </p>
+
+                      <a href="#" class="btn btn-primary btn-sm">Ir a la actividad</a>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card-body">
+                      <h6 class="card-title">Titulo de la actividad</h6>
+                      <p class="card-text mb-2">
+                        <b>Curso:</b> <i>Curso 02</i>
+                      </p>
+                      <p class="card-text mb-2">
+                        <b>Fecha:</b> 2021-10-1 (Viernes)
+                      </p>
+
+                      <a href="#" class="btn btn-primary btn-sm">Ir a la actividad</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="card-body">
+                      <h6 class="card-title">Titulo de la actividad</h6>
+                      <p class="card-text mb-2">
+                        <b>Curso:</b> <i>Curso 02</i>
+                      </p>
+                      <p class="card-text mb-2">
+                        <b>Fecha:</b> 2021-10-1 (Viernes)
+                      </p>
+
+                      <a href="#" class="btn btn-primary btn-sm">Ir a la actividad</a>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card-body">
+                      <h6 class="card-title">Titulo de la actividad</h6>
+                      <p class="card-text mb-2">
+                        <b>Curso:</b> <i>Curso 02</i>
+                      </p>
+                      <p class="card-text mb-2">
+                        <b>Fecha:</b> 2021-10-1 (Viernes)
+                      </p>
+
+                      <a href="#" class="btn btn-primary btn-sm">Ir a la actividad</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fin de actividades -->
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Fin calendario y actividades-->
+      </div>
+      <div class="col-sm-4">
+        <h5 class="card-title text-center"><u><b>Tareas</b></u></h5>
+        <!-- inicio tareas -->
+        <div class="card">
+          <div class="card-header">
+            Courso - Titulo de tarea
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fecha de entrega</h5>
+            <p class="card-text">Descripción de la tarea</p>
+            <a href="#" class="btn btn-primary btn-sm">Ir a tarea</a>
+          </div>
+        </div>
+        <p></p>
+        <div class="card">
+          <div class="card-header">
+            Courso - Titulo de tarea
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fecha de entrega</h5>
+            <p class="card-text">Descripción de la tarea</p>
+            <a href="#" class="btn btn-primary btn-sm">Ir a tarea</a>
+          </div>
+        </div>
+        <p></p>
+
+        <div class="card">
+          <div class="card-header">
+            Courso - Titulo de tarea
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fecha de entrega</h5>
+            <p class="card-text">Descripción de la tarea</p>
+            <a href="#" class="btn btn-primary btn-sm">Ir a tarea</a>
+          </div>
+        </div>
+        <p></p>
+
+
+        <p></p>
+        <!-- Termina las 4 cartas de tarea -->
+        <h6 class="card-title text-center"><u>Buscar tarea</u></h6>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <hr>
+        <h6 class="card-title text-center"><u>Opciones Adicionales</u></h6>
+        <div class="container">
+          <div class="row">
+
+            <div class="col">
+              <select class="form-select form-select-sm">
+                <option value="de" select>Tipo de trabajo</option>
+                <option value="p">Personal</option>
+                <option value="g">Grupo</option>
+
+              </select>
+            </div>
+            <div class="col">
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Solo Futuros
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Incluir pasados
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <p></p>
+          <div class="row">
+            <div class="col">
+              <select class="form-select form-select-sm">
+                <option value="de" select>Curso</option>
+                <option value="p">Corso1</option>
+                <option value="g">Curso2</option>
+
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin tareas -->
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- <div class="container" id="mainBox">
+    <div class="row">
+      <div class="col-md-8">.col-md-8</div>
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+  </div> -->
+<!-- 
+
+  <div class="grid" style="--bs-columns: 18; --bs-gap: .5rem;">
+    <div style="grid-column: span 14;">14 columns</div>
+    <div class="g-col-4">.g-col-4</div>
+  </div> -->

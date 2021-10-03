@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Helslo, world!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light ">
+    <div class="container-fluid">
+      <div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a style="margin-left: 30px;" href="#">
+          <img src="img/Logo.png" class="img-fluid" alt="..." style=" height: 2.5rem;">
+
+        </a>
+      </div>
+      <div>
+
+        <a class="navbar-brand " href="#">UNIVERSIDAD NACIONAL SAN AGUSTIN DE AREQUIPA</a>
+      </div>
+      <div>
+
+        <a class="navbar-brand" href="#">Cerrar Sesion</a>
+        <!-- <span class="icondoor-open-fill"></span> --> agregar icono
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><u><b>Menu</b></u></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">ASIGNATURA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">TAREAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">CONFIGURACIÓN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">SALIR</a>
+            </li>
+            <hr>
+            <h5><b>Notas Personales</b></h5>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11"></textarea>
+
+            <p></p>
+
+            <div class="d-grid gap-2 ">
+              <button class="btn btn-primary" type="button">Guardar</button>
+              <button class="btn btn-secondary" type="button">Eliminar</button>
+            </div>
+
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr>
+
+  <div class="example-container">
+    <div class="row">
+
+
+      <div class="col-sm-4" style="border-right: 1px solid black;">
+        <h5 class="card-title text-center"><u><b>Tareas</b></u></h5>
+        <!-- inicio tareas -->
+        <div class="card">
+          <div class="card-header">
+            Courso - Titulo de tarea
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fecha de entrega</h5>
+            <p class="card-text">Descripción de la tarea</p>
+            <a href="#" class="btn btn-primary btn-sm">Ir a tarea</a>
+          </div>
+        </div>
+        <p></p>
+        <div class="card">
+          <div class="card-header">
+            Courso - Titulo de tarea
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fecha de entrega</h5>
+            <p class="card-text">Descripción de la tarea</p>
+            <a href="#" class="btn btn-primary btn-sm">Ir a tarea</a>
+          </div>
+        </div>
+        <p></p>
+
+        <div class="card">
+          <div class="card-header">
+            Courso - Titulo de tarea
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fecha de entrega</h5>
+            <p class="card-text">Descripción de la tarea</p>
+            <a href="#" class="btn btn-primary btn-sm">Ir a tarea</a>
+          </div>
+        </div>
+        <p></p>
+
+
+        <p></p>
+        <!-- Termina las 4 cartas de tarea -->
+        <h6 class="card-title text-center"><u>Buscar tarea</u></h6>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <hr>
+        <h6 class="card-title text-center"><u>Opciones Adicionales</u></h6>
+        <div class="container">
+          <div class="row">
+
+            <div class="col">
+              <select class="form-select form-select-sm">
+                <option value="de" select>Tipo de trabajo</option>
+                <option value="p">Personal</option>
+                <option value="g">Grupo</option>
+
+              </select>
+            </div>
+            <div class="col">
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Solo Futuros
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Incluir pasados
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <p></p>
+          <div class="row">
+            <div class="col">
+              <select class="form-select form-select-sm">
+                <option value="de" select>Curso</option>
+                <option value="p">Corso1</option>
+                <option value="g">Curso2</option>
+
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin tareas -->
+
+
+
+      <div class="col-sm-8">
+        <!-- Tareas frecuentes -->
+
+        <h5 class="card-title text-center"><u><b>CONFIGURACIÓN</b></u></h5>
+
+        <!-- Datos Personales -->
+        <div class="partSetting">
+
+          <div class="container">
+
+            <div class="row">
+              <h5><u><b>Datos Personales</b></u></h5>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-2">
+                col1
+              </div>
+
+              <div class="col">
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Nombres y Apellidos</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Usuario</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Contraseña</span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="Contraseña" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                </div>
+
+                <div class="container mb-3">
+                  <div class="row">
+                    <div class="col p-0">
+                      <div class="input-group ">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">CUI</span>
+                        </div>
+                        <input type="number" class="form-control" placeholder="CUI" aria-label="Username"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+
+                    <div class="col p-0 ">
+
+                      <div class="input-group ">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">DNI</span>
+                        </div>
+                        <input type="number" class="form-control" placeholder="DNI" aria-label="Username"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-2">
+                col3
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <hr>
+
+        <!-- Datos Academicos -->
+        <div class="partSetting">
+
+          <div class="container">
+
+            <div class="row">
+              <h5><u><b>Datos Académicos</b></u></h5>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-2">
+                col1
+              </div>
+
+              <div class="col">
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Semestre</span>
+                  </div>
+                  <input type="number" class="form-control" min="1" max="10" placeholder="Nombre Completo"
+                    aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Correo</span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Correo" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Calendario Público</span>
+                  </div>
+                  <input type="checkbox" style="margin-left: 5px; zoom: 2.9">
+                </div>
+              </div>
+
+              <div class="col-sm-2">
+                col3
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <hr>
+
+
+        <!-- Datos Para mostrar -->
+        <div class="partSetting">
+          <div class="container">
+
+            <div class="row">
+              <h5><u><b>Datos Para Mostrar</b></u></h5>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p></p>
+
+                <div class="container">
+
+                  <div class="row">
+                    <h5><u><b>Datos Personales</b></u></h5>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-3">
+                      col1
+                    </div>
+
+                    <div class="col">
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Nombres y Apellidos</span>
+                        </div>
+                        <input class="checkDatosMostrar" type="checkbox" style="margin-left: 5px; zoom: 2.9">
+
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Usuario</span>
+                        </div>
+                        <input class="checkDatosMostrar" type="checkbox" style="margin-left: 5px; zoom: 2.9">
+
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Contraseña</span>
+                        </div>
+                        <input class="checkDatosMostrar" type="checkbox" style="margin-left: 5px; zoom: 2.9">
+
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">CUI</span>
+                        </div>
+                        <input class="checkDatosMostrar" type="checkbox" style="margin-left: 5px; zoom: 2.9">
+
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">DNI</span>
+                        </div>
+                        <input class="checkDatosMostrar" type="checkbox" style="margin-left: 5px; zoom: 2.9">
+
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="col">
+                <p></p>
+
+
+                <div class="container">
+
+                  <div class="row">
+                    <h5><u><b>Datos Académicos</b></u></h5>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-3">
+                      col1
+                    </div>
+
+                    <div class="col">
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Semestre</span>
+                        </div>
+                        <input class="checkDatosMostrar" type="checkbox" style="margin-left: 5px; zoom: 2.9">
+
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Correo</span>
+                        </div>
+                        <input class="checkDatosMostrar" type="checkbox"
+                          style="margin-left: 5px; zoom: 2.9; contain: left;">
+
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Calendario Público</span>
+                        </div>
+                        <input class="checkDatosMostrar" type="checkbox"
+                          style="margin-left: 5px; zoom: 2.9; float: left;">
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+        <!-- Fin calendario y actividades-->
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
